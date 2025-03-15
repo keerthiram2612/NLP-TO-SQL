@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="row">
             <div className="col-md-2">
                 <div className="left">
-                <a href="QBridge"><h2>QBridge</h2></a>
+                <a href="QBridge"><h2>QBRIDGE</h2></a>
                 </div>
             </div>
             <div className="col-md-4">
@@ -37,8 +37,8 @@ export default function Navbar() {
             <div className="col-md-6">
                 <ul className="right">
                     <a href="/"><li>Home</li></a>
+                    <a href="/"><li>Features</li></a>
                     <a href=""><li>QBridge</li></a>
-                    <a href=""><li>Feedback</li></a>
                     <a href=""><li>Login</li></a>
                     <a href=""><li>SignUp</li></a>
                 </ul>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 
 .right a li{
   list-style-type: none;
@@ -11,15 +11,15 @@
 }
 
 .right a li:hover{
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid blue;
+  transition: .2s linear;
 }
 .right {
     float: right; 
 }
 .left a{
-  color: purple;
-  font-family: 'Roboto', sans-serif;
-  
+  color: red;
+ font-family:cursive;
 }
 .left {
   margin: 20px 0;
@@ -29,7 +29,6 @@
 }
 /* Light Mode */
 body {
-  font-family: 'Roboto', sans-serif;
   background-color: white;
   color: black;
   transition: background 0.3s, color 0.3s;
