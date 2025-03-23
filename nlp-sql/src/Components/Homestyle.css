@@ -63,42 +63,6 @@
     }
     
 }
-
-
-
-/* Modal Overlay */
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Modal Box */
-  .modal-content {
-    background: white;
-    padding: 20px;
-    width: 350px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Input Fields */
-  .modal-content input,
-  .modal-content textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
   /* Submit and Close Buttons */
   .btn-submit {
     background: #28a745;
@@ -122,16 +86,7 @@
     margin-top: 5px;
   }
   
-  .btnclose{
-    background: #dc3545;
-    color: black;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 5px;
-  }
+  
   .contact{
     display: flex;
     justify-content: center;
@@ -145,6 +100,7 @@
     background: rgba(0, 0, 0, 0.5);
    
   }
+    /* Modal Box */
   .contact-page{
     background-color: white;
     padding: 20px;
@@ -152,9 +108,11 @@
     text-align: center;
 
   }
+   /* Input Fields */
   .contact-page input,.contact-page textarea{
      width: 100%;
      padding: 10px;
      margin: 8px 0;
-     
+     border: 1px solid #ccc;
+     border-radius: 5px;
   }

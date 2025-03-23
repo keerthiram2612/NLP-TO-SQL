@@ -36,7 +36,7 @@ export default function Home() {
           <input type="email" placeholder="Your Email"/>
           <textarea placeholder="Message"></textarea>
           <button className="btn-submit">Submit</button>
-          <button className="btn-close"onClick={()=>setShowContact(false)}>close</button>
+          <button className="btn-close"onClick={()=>setShowContact(false)}>Close</button>
           </div>
         </div>
       )}
