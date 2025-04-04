@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Homestyle.css";
 import Features from "./Features";
+import About from "./About";
 
 export default function Home() {
   const [showContact, setShowContact] = useState(false);
@@ -17,13 +18,16 @@ export default function Home() {
               Convert Natural Language queries into SQL effortlessly <br />
               using Machine Learning.
             </p>
-            <button className="btn-home" onClick={() => setShowContact(true)}>
-              Contact Us
-            </button>
+            <button className="btn-home" onClick={() => {
+            setShowContact(true);
+            document.body.classList.add("modal-open"); // Disable scrolling
+            }}>
+           Contact Us
+          </button>
           </div>
         </div>
       </div>
-
+      <About/>
       <Features />
 
       {/* Contact Modal */}
@@ -36,7 +40,12 @@ export default function Home() {
           <input type="email" placeholder="Your Email"/>
           <textarea placeholder="Message"></textarea>
           <button className="btn-submit">Submit</button>
-          <button className="btn-close"onClick={()=>setShowContact(false)}>Close</button>
+          <button className="btn-close" onClick={() => {
+          setShowContact(false);
+          document.body.classList.remove("modal-open"); // Enable scrolling
+          }}>
+         Close
+        </button>
           </div>
         </div>
       )}

@@ -1,6 +1,7 @@
 import "./Navbarstyle.css"
 import React from 'react'
 import { useState,useEffect } from "react";
+import Logincontent from "./Logincontent";
 
 export default function Navbar() {
   const [darkMode, setDarkMode] = useState(
@@ -39,8 +40,8 @@ export default function Navbar() {
                     <a href="/"><li>Home</li></a>
                     <a href="/"><li>Features</li></a>
                     <a href=""><li>QBridge</li></a>
-                    <a href=""><li>Login</li></a>
-                    <a href=""><li>SignUp</li></a>
+                    <a href="/Login"><li>Login</li></a>
+                    <a href="/signup"><li>SignUp</li></a>
                 </ul>
             </div>
         </div>

@@ -101,6 +101,7 @@
     align-items: center;
     position: fixed;
     background: rgba(0, 0, 0, 0.5);
+    z-index: 1000
    
   }
     /* Modal Box */
@@ -109,7 +110,7 @@
     padding: 20px;
     width: 350px;
     text-align: center;
-
+    position: relative;
   }
    /* Input Fields */
   .contact-page input,.contact-page textarea{
@@ -126,4 +127,8 @@
 
 .dark-mode .contact-page h2 {
     color: white; /* Ensure text is visible */
+}
+/* Disable Scrolling when Modal is Open */
+body.modal-open {
+  overflow: hidden;
 }
